@@ -1,9 +1,8 @@
 # Luigis Wordpress Theme
 Converting form HTML to Wordpress Theme
 
-# Plugins used
+##### Plugins used
   - Advanced Custom Fields Pro
 
-# Screenshots
-##### Login
+##### Screenshots
 ![Screenshot](/screenshot.png "Screenshot")
