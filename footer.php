@@ -2,29 +2,31 @@
 	<div class="pos-top triangle-bottom"></div>
 	<div class="container-fluid">
 		<a href="index.html"><img src="<?php bloginfo('template_directory'); ?>/images/logo-white.png" alt="Logo"></a>
-
+<?php
+    $footer_acf = get_field('footer');
+?>
 		<div class="pt-30">
 			<p class="underline-secondary"><b>Address:</b></p>
-			<p>481 Creekside Lane Avila Beach, CA 93424 </p>
+			<p><?php echo $footer_acf['address']; ?></p>
 		</div>
 
 		<div class="pt-30">
 			<p class="underline-secondary mb-10"><b>Phone:</b></p>
-			<a href="tel:+53 345 7953 32453 ">+53 345 7953 32453 </a>
+			<a href="tel:+53 345 7953 32453 "><?php echo $footer_acf['phone'] ?></a>
 		</div>
 
 		<div class="pt-30">
 			<p class="underline-secondary mb-10"><b>Email:</b></p>
-			<a href="mailto:yourmail@gmail.com"> yourmail@gmail.com</a>
+			<a href="mailto:yourmail@gmail.com"> <?php echo $footer_acf['email'] ?></a>
 		</div>
 
 		<ul class="icon mt-30">
-			<li><a href="#"><i class="ion-social-pinterest"></i></a></li>
-			<li><a href="#"><i class="ion-social-facebook"></i></a></li>
-			<li><a href="#"><i class="ion-social-twitter"></i></a></li>
-			<li><a href="#"><i class="ion-social-dribbble-outline"></i></a></li>
-			<li><a href="#"><i class="ion-social-linkedin"></i></a></li>
-			<li><a href="#"><i class="ion-social-vimeo"></i></a></li>
+			<li><a href="<?php echo $footer_acf['facebook'] ?>"><i class="ion-social-facebook"></i></a></li>
+			<li><a href="<?php echo $footer_acf['twitter'] ?>"><i class="ion-social-twitter"></i></a></li>
+            <li><a href="<?php echo $footer_acf['linkedin'] ?>"><i class="ion-social-linkedin"></i></a></li>
+<!--			<li><a href="#"><i class="ion-social-dribbble-outline"></i></a></li>-->
+<!--            <li><a href="#"><i class="ion-social-pinterest"></i></a></li>			-->
+<!--			<li><a href="#"><i class="ion-social-vimeo"></i></a></li>-->
 		</ul>
 
 		<p class="color-light font-9 mt-50 mt-sm-30"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
