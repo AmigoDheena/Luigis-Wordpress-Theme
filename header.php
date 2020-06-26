@@ -22,14 +22,23 @@
 		</div><!-- right-area -->
 
 		<a class="menu-nav-icon" data-menu="#main-menu" href="#"><i class="ion-navicon"></i></a>
-
-		<ul class="main-menu font-mountainsre" id="main-menu">
-			<li><a href="index.html">HOME</a></li>
-			<li><a href="02_about_us.html">ABOUT US</a></li>
-			<li><a href="03_menu.html">SERVICES</a></li>
-			<li><a href="04_blog.html">NEWS</a></li>
-			<li><a href="05_contact.html">CONTACT</a></li>
-		</ul>
+        <?php
+            wp_nav_menu(
+                array(
+                    'theme_location'=>'top-menu',
+                    'menu_id'=>'main-menu',
+                    'container'=>'ul',
+                    'menu_class' =>'main-menu font-mountainsre'
+                )
+            );
+        ?>
+<!--		<ul class="main-menu font-mountainsre" id="main-menu">-->
+<!--			<li><a href="index.html">HOME</a></li>-->
+<!--			<li><a href="02_about_us.html">ABOUT US</a></li>-->
+<!--			<li><a href="03_menu.html">SERVICES</a></li>-->
+<!--			<li><a href="04_blog.html">NEWS</a></li>-->
+<!--			<li><a href="05_contact.html">CONTACT</a></li>-->
+<!--		</ul>-->
 
 		<div class="clearfix"></div>
 	</div><!-- container -->

@@ -22,19 +22,28 @@ function load_stylesheets(){
 add_action('wp_enqueue_scripts','load_stylesheets');
 
 function load_scripts(){
-	wp_register_script('jquery-3.2.1',get_template_directory_uri().'/plugin-frameworks/jquery-3.2.1.min.js',array(),false,false);
+	wp_register_script('jquery-3.2.1',get_template_directory_uri().'/plugin-frameworks/jquery-3.2.1.min.js',array(),false,true);
 	wp_enqueue_script('jquery-3.2.1');
 
-	wp_register_script('bootstrap',get_template_directory_uri().'/plugin-frameworks/bootstrap.min.js',array(),false,false);
+	wp_register_script('bootstrap',get_template_directory_uri().'/plugin-frameworks/bootstrap.min.js',array(),false,true);
 	wp_enqueue_script('bootstrap');
 
-	wp_register_script('swiper',get_template_directory_uri().'/plugin-frameworks/swiper.js',array(),false,false);
+	wp_register_script('swiper',get_template_directory_uri().'/plugin-frameworks/swiper.js',array(),false,true);
 	wp_enqueue_script('swiper');
 
-	wp_register_script('common-scripts',get_template_directory_uri().'/common/scripts.js',array(),false,false);
+	wp_register_script('common-scripts',get_template_directory_uri().'/common/scripts.js',array(),false,true);
 	wp_enqueue_script('common-scripts');
 
-	wp_register_script('customjs',get_template_directory_uri().'/custom.js',array(),false,false);
+	wp_register_script('customjs',get_template_directory_uri().'/custom.js',array(),false,true);
 	wp_enqueue_script('customjs');
 }
 add_action('wp_enqueue_scripts','load_scripts');
+
+//Theme support
+add_theme_support('menus');
+
+register_nav_menus(
+	array(
+		'top-menu'=> 'Top Menu',
+	)
+);
