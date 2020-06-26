@@ -866,7 +866,7 @@ section {
 }
 
 
-.bg-1 { background: url(../images/slider_1_1920_1200.jpg) no-repeat center; background-size: cover; }
+/* .bg-1 { background: url(../images/slider_1_1920_1200.jpg) no-repeat center; background-size: cover; } */
 
 .bg-2 {   background: url(../images/story_bg_1.png) no-repeat center; background-size: 100%; }
 

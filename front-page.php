@@ -2,8 +2,7 @@
 <?php
     $hero = get_field('hero');
 ?>
-
-<section class="bg-1 h-900x main-slider pos-relative">
+<section class="bg-1 h-900x main-slider pos-relative" style="background: url('<?php echo the_post_thumbnail_url(); ?>') no-repeat center; background-size: cover;" >
 	<div class="triangle-up pos-bottom"></div>
 	<div class="container h-100">
 		<div class="dplay-tbl">
@@ -12,7 +11,7 @@
 				<h5><b><?php echo $hero['small_title'] ?></b></h5>
 				<h1 class="mt-30 mb-15"><?php echo $hero['main_title'] ?></h1>
 				<h5><a href="<?php echo $hero['link'] ?>" class="btn-primaryc plr-25"><b><?php echo $hero['link_text'] ?></b></a></h5>
-			</div><!-- dplay-tbl-cell -->selecton brdr-b-primary mb-70
+			</div><!-- dplay-tbl-cell -->
 		</div><!-- dplay-tbl -->
 	</div><!-- container -->
 </section>
