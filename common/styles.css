@@ -872,7 +872,7 @@ section {
 
 .bg-3 {  background: url(../images/story_bg_2.png) no-repeat center;  background-size: 100%; }
 
-.bg-4 {  background: url(../images/slider_2_1920_600.jpg) no-repeat center;  background-size: cover; }
+/* .bg-4 {  background: url(../images/slider_2_1920_600.jpg) no-repeat center;  background-size: cover; } */
 
 .bg-5 {  background: url(../images/slider_3_1920_600.jpg) no-repeat center;  background-size: cover; }
 
