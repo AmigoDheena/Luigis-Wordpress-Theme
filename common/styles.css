@@ -1157,6 +1157,9 @@ section {
         border: 1px solid #eee;
 }
 
+form span {
+        display: block;
+}
 /* SIDED SECTION */
 
 .sided-half { overflow: hidden; }
@@ -4518,7 +4521,7 @@ ul.icon li a{ padding: 10px;  }
         margin-bottom: 15px !important;
 }
 
-.mb-20 {
+.mb-20, .wpcf7-text {
         margin-bottom: 20px !important;
 }
 
@@ -7351,5 +7354,3 @@ ul.icon li a{ padding: 10px;  }
         }
 
 }
-
-
